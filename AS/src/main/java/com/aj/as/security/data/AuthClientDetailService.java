@@ -19,7 +19,7 @@ public class AuthClientDetailService implements ClientDetailsService{
 
     @Override
     public ClientDetails loadClientByClientId(String string) throws ClientRegistrationException {
-        if("Ajilal".equals(string)){
+        if("client_id".equals(string)){
             return new AuthClient();
         }
         throw new ClientRegistrationException("Client not registered");

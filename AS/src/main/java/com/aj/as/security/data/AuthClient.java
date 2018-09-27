@@ -52,14 +52,16 @@ public class AuthClient implements ClientDetails{
     @Override
     public Set<String> getAuthorizedGrantTypes() {
         HashSet<String> types = new HashSet<>();
-        types.add("ADMIN");
+        types.add("password");
+        types.add("authorization_code");
+        types.add("refresh_token");
         return types;
     }
 
     @Override
     public Set<String> getRegisteredRedirectUri() {
         HashSet<String> uris = new HashSet<>();
-        uris.add("http://www.google.com");
+        uris.add("http://localhost:8080");
         return uris;
     }
 

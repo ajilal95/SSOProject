@@ -1,0 +1,4 @@
+com/aj/as/security/data/AuthClient.class
+com/aj/as/security/data/AuthClientDetailService.class
+com/aj/as/security/config/AuthConfiguration.class
+com/aj/as/security/config/ServerSecurityConfig.class
